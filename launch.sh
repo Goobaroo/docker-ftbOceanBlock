@@ -5,9 +5,9 @@ set -x
 cd /data
 
 
-if ! [[ -f serverinstall_91_2104 ]]; then
-	curl -o serverinstall_91_2104 https://api.modpacks.ch/public/modpack/91/2104/server/linux
-	chmod +x serverinstall_91_2104
+if ! [[ -f serverinstall_91_2105 ]]; then
+	curl -o serverinstall_91_2105 https://api.modpacks.ch/public/modpack/91/2105/server/linux
+	chmod +x serverinstall_91_2105
 	./serverinstall_91_2093 --path /data --auto
 fi
 
