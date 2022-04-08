@@ -1,11 +1,13 @@
 # [FTB Ocean Block](https://www.feed-the-beast.com/modpack/ftb_oceanblock)
 <!-- MarkdownTOC autolink="true" indent="  " markdown_preview="github" -->
 
-- [Description](#description)
-- [Requirements](#requirements)
-- [Options](#options)
-- [Adding Minecraft Operators](#adding-minecraft-operators)
-- [Source](#source)
+- [FTB Ocean Block](#ftb-ocean-block)
+  - [Description](#description)
+  - [Requirements](#requirements)
+  - [Options](#options)
+  - [Adding Minecraft Operators](#adding-minecraft-operators)
+  - [Docker compose example](#docker-compose-example)
+  - [Source](#source)
 
 <!-- /MarkdownTOC -->
 
@@ -36,6 +38,24 @@ Set the enviroment variable `OPS` with a comma separated list of players.
 
 example:
 `OPS="OpPlayer1,OpPlayer2"`
+
+## Docker compose example
+```
+version: "3.8"
+
+services:
+  minecraft:
+    image: goobaroo/ftboceanblock
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/data
+    environment:
+      JVM_OPTS: "-Xms2048m -Xmx2048m"
+      MOTD: "A Minecraft (FTB OceanBlock 1.9.0) Server Powered by Docker"
+      LEVEL: "world"
+      OPS: "OpPlayer1,OpPlayer2"
+```
 
 ## Source
 Github: https://github.com/Goobaroo/docker-ftbOceanBlock

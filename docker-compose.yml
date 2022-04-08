@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  minecraft:
+    image: goobaroo/ftboceanblock
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./data:/data
+    environment:
+      EULA: "true"
+      JVM_OPTS: "-Xms2048m -Xmx2048m"
+      MOTD: "A Minecraft (FTB OceanBlock 1.9.0) Server Powered by Docker"
+      LEVEL: "world"
+      OPS: "OpPlayer1,OpPlayer2"
