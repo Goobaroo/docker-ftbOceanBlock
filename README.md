@@ -1,4 +1,4 @@
-# [FTB OceanBlock](https://feed-the-beast.com/modpack/ftb_oceanblock) By FTB
+# [FTB OceanBlock](https://feed-the-beast.com/modpack/91-ftb_oceanblock) By FTB
 
 <!-- toc -->
 
