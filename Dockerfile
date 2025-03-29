@@ -7,7 +7,7 @@ LABEL homepage.group=Minecraft
 LABEL homepage.name="FTB OceanBlock"
 LABEL homepage.icon="https://apps.modpacks.ch/modpacks/art/87/logo.png"
 LABEL homepage.widget.type=minecraft
-LABEL homepage.widget.url=FTBOceanBlock:25565
+LABEL homepage.widget.url=udp://FTBOceanBlock:25565
 
 
 RUN apt-get update && apt-get install -y curl && \
